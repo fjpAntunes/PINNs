@@ -1,0 +1,9 @@
+services:
+    jupyter: 
+        image: tensorflow/tensorflow:1.15.5-gpu-jupyter
+        ports:
+            - "8888:8888"
+        stdin_open: true
+        tty: true
+        volumes: 
+            - ./main:/tf
